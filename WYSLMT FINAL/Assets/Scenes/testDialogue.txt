@@ -1,0 +1,5 @@
+﻿Question1: Today was really fun
+Answer1: Yeah (Question2)
+Answer2: No (Question3)
+Question2: I’m glad you had fun!
+Question3: Why?
