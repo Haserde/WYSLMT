@@ -8,7 +8,7 @@ public class TextBoxManager : MonoBehaviour {
 	public Text theDialogue;
 	public TextAsset textFile;
 	public GameObject button;
-	public Text theChoice;
+	public Text theChoice1, theChoice2, theChoice3;
 
 	public string[] textLines;
 	
@@ -21,6 +21,7 @@ public class TextBoxManager : MonoBehaviour {
 
 	public float typeSpeed;
 
+	private DialogueChoice currentDC;
 
 
 	//public PlayerController player;
@@ -33,6 +34,8 @@ public class TextBoxManager : MonoBehaviour {
 		if(endAtLine == 0) {
 		endAtLine = textLines.Length - 1; 
 		}
+		DialogueManager.init ();
+		changeText (DialogueManager.getAlexDialogueChoiceFromId (0));
 	}
 
 	void Update() {
@@ -72,6 +75,34 @@ public class TextBoxManager : MonoBehaviour {
 
 	public void DisableTextBox(){
 		textBox.SetActive (false);
+	}
+
+	public void getNextChoiceBasedOnBox(int choiceNumber) {
+		int idClickedOn = 0;
+		if (choiceNumber == 1) {
+			idClickedOn = currentDC.gotoId1;
+		} else if (choiceNumber == 2) {
+			idClickedOn = currentDC.gotoId2;
+		} else if (choiceNumber == 3) {
+			idClickedOn = currentDC.gotoId3;
+		}
+
+		DialogueChoice nextChoice = DialogueManager.getAlexDialogueChoiceFromId (idClickedOn);
+		changeText (nextChoice);
+	}
+
+	public void changeText( DialogueChoice current) {
+		currentDC = current;
+		theDialogue.text = current.line;
+		theChoice1.text = current.gotoLine1;
+		theChoice2.text = current.gotoLine2;
+
+		if (current.gotoId3 != null) {
+			theChoice3.gameObject.SetActive( true );
+			theChoice3.text = current.gotoLine3;
+		} else {
+			theChoice3.gameObject.SetActive( false );
+		}
 	}
 
 }
