@@ -20,5 +20,20 @@ public class TextBoxManager : MonoBehaviour {
 		if (textFile != null) {
 			textLines = (textFile.text.Split ('\n'));
 		}
+
+		if(endAtLine == 0) {
+		endAtLine = textLines.Length - 1; 
+		}
 	}
+
+	void Update() {
+	theText.text = textLines[currentLine];
+
+		if (Input.GetKeyDown (KeyCode.Return)) {
+			currentLine += 1;
+		}
+	
+	}
+
 }
+
