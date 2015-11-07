@@ -5,12 +5,13 @@ using UnityEngine.UI;
 public class TextBoxManager : MonoBehaviour {
 
 	public GameObject textBox;
-
-	public Text theText;
-
+	public Text theDialogue;
 	public TextAsset textFile;
-	public string[] textLines;
+	public GameObject button;
+	public Text theChoice;
 
+	public string[] textLines;
+	
 	public int currentLine;
 	public int endAtLine;
 
@@ -55,15 +56,15 @@ public class TextBoxManager : MonoBehaviour {
 
 	private IEnumerator TextScroll (string lineofText){
 		int letter = 0;
-		theText.text = "";
+		theDialogue.text = "";
 		isTyping = true;
 		cancelTyping = false;
 		while (isTyping && !cancelTyping && (letter < lineofText.Length - 1)) {
-			theText.text += lineofText [letter];
+			theDialogue.text += lineofText [letter];
 			letter += 1;
 			yield return new WaitForSeconds(typeSpeed);
 		}
-		theText.text = lineofText;
+		theDialogue.text = lineofText;
 		isTyping = false;
 		cancelTyping = false;
 	}
