@@ -14,7 +14,7 @@ public class TextBoxManager : MonoBehaviour {
 	
 	public int currentLine;
 	public int endAtLine;
-
+	
 	private bool isTyping = false;
 	private bool cancelTyping = false;
 
@@ -88,7 +88,7 @@ public class TextBoxManager : MonoBehaviour {
 		}
 
 		DialogueChoice nextChoice = DialogueManager.getAlexDialogueChoiceFromId (idClickedOn);
-		changeText (nextChoice);
+			changeText (nextChoice);
 	}
 
 	public void changeText( DialogueChoice current) {
