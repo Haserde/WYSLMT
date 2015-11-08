@@ -3,13 +3,11 @@ using System.Collections;
 
 public class ThreeWP : MonoBehaviour {
 
-	public string[] sentence = {"I'm", "having", "fun!"};
-
-	public string theThigns;
+	public string theThings;
 	
 	void OnTriggerEnter(Collider other) {
-		if ( other.name == theThigns) {
-			//this is the right word
+		if ( other.name == theThings) {
+			GetComponent<MovementScript> ().enabled = false;
 		}
 	}
 }

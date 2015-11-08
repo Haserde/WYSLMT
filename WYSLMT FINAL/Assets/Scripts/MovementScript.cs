@@ -14,9 +14,14 @@ public class MovementScript : MonoBehaviour {
 	Vector3 lastPosition;
 	Vector3 moveDirection;
 
+	Vector3 screenPoint;
+	Vector3 offset;
+
+
 	void Start() {
 		Vector3 startDir = Random.insideUnitSphere;
-		moveDirection = new Vector3 (startDir.x, startDir.y,0);
+		moveDirection = new Vector3 (startDir.x, startDir.y, 0);
+		print (moveDirection);
 	}
 
 	void FixedUpdate () {
@@ -34,10 +39,26 @@ public class MovementScript : MonoBehaviour {
 			moveDirection = new Vector3 (moveDirection.x, -moveDirection.y, 0);
 		}
 
-		/*transform.position = new Vector3  (
+		transform.position = new Vector3  (
 				Mathf.Clamp (transform.position.x, boundary.xMin, boundary.xMax), 
-				0.0f, 
-				Mathf.Clamp (transform.position.y, boundary.yMin, boundary.yMax) );
-*/
+				Mathf.Clamp (transform.position.y, boundary.yMin, boundary.yMax), 
+				0 );
+
+	}
+	void OnMouseDown(){
+		screenPoint = Camera.main.WorldToScreenPoint(GetComponent<Collider>().transform.position);
+		offset = GetComponent<Collider>().transform.position - 
+			Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z));
+
+	}
+	
+	void OnMouseDrag() {
+		Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z);
+		
+		Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint) - offset;
+		transform.position = curPosition;
+		
 	}
 }
+
+
