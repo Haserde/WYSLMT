@@ -6,8 +6,11 @@ public class ThreeWP : MonoBehaviour {
 	public string theThings;
 	
 	void OnTriggerEnter(Collider other) {
-		if ( other.name == theThings) {
-			GetComponent<MovementScript> ().enabled = false;
+		print ("here");
+		if (other.name == theThings) {
+			other.GetComponent<MovementScript> ().enabled = false;
+			other.transform.position = transform.position;
+			other.GetComponent<Rigidbody>().Sleep();
 		}
 	}
 }

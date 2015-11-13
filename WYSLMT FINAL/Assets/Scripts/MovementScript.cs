@@ -32,12 +32,15 @@ public class MovementScript : MonoBehaviour {
 
 		//reflect off the sides of the screen
 		if ( (transform.position.x > boundary.xMax) || (transform.position.x < boundary.xMin)) {
-			moveDirection = new Vector3 ( -moveDirection.x, moveDirection.y, 0);
+			moveDirection = new Vector3 ( -moveDirection.x, moveDirection.y, moveDirection.z );
 		}
 
 		if ( (transform.position.y > boundary.yMax) || (transform.position.y < boundary.yMin)) {
-			moveDirection = new Vector3 (moveDirection.x, -moveDirection.y, 0);
+			moveDirection = new Vector3 (moveDirection.x, -moveDirection.y, moveDirection.z );
 		}
+	/*	if ((transform.position.z > boundary.zMax) || (transform.position.z < boundary.zMin)) {
+			moveDirection = new Vector3 (moveDirection.z, moveDirection.y, -moveDirection.z);
+		}*/
 
 		transform.position = new Vector3  (
 				Mathf.Clamp (transform.position.x, boundary.xMin, boundary.xMax), 
