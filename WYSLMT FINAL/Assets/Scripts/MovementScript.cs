@@ -11,11 +11,12 @@ public class MovementScript : MonoBehaviour {
 
 	public float speed;
 	public Boundary boundary;
-	Vector3 lastPosition;
+
 	Vector3 moveDirection;
 
 	Vector3 screenPoint;
 	Vector3 offset;
+
 
 
 	void Start() {
@@ -27,8 +28,6 @@ public class MovementScript : MonoBehaviour {
 	void FixedUpdate () {
 		transform.position = transform.position + moveDirection * speed * Time.deltaTime;
 //		Vector3.Reflect ();
-
-		lastPosition = transform.position;
 
 		//reflect off the sides of the screen
 		if ( (transform.position.x > boundary.xMax) || (transform.position.x < boundary.xMin)) {
