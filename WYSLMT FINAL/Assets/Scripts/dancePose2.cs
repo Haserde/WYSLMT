@@ -21,6 +21,7 @@ public class dancePose2 : MonoBehaviour {
 			difficulty = 2;
 			Instantiate (ScoreUp, GameObject.Find ("heartPos").transform.position, GameObject.Find ("heartPos").transform.rotation);
 			Instantiate (Heart, GameObject.Find ("heartPos2").transform.position, GameObject.Find ("heartPos2").transform.rotation);
+			Instantiate (Heart, GameObject.Find ("heartPos2").transform.position + new Vector3 (.8f, .5f, 0), GameObject.Find ("heartPos2").transform.rotation);
 			
 		} else {
 			difficulty = -1;
