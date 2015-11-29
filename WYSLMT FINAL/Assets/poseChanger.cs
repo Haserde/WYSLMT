@@ -20,12 +20,12 @@ public class poseChanger : MonoBehaviour {
 
 		if (slider.value >= 20 && slider.value < 75) {
 
-			changePose.SetInteger ("State", 1);
+			changePose.SetInteger ("State", 2);
 			Instantiate (TextWarning, GameObject.Find ("textPos").transform.position, GameObject.Find ("textPos").transform.rotation);
 		
 
 		} else if (slider.value >= 75) {
-			changePose.SetInteger ("State", 0);
+			changePose.SetInteger ("State", 6);
 
 		} else {
 			changePose.SetInteger("State", 3);

@@ -18,13 +18,14 @@ public class newPoses : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (scoreSlider.value > 30) {
+		if (scoreSlider.value > 30 && scoreSlider.value < 80) {
 
 			Invoke ("scoreDown", 1);
 
-		} else if (scoreSlider.value > 80) {
+		} else if (scoreSlider.value > 80 && scoreSlider.value < 100) {
 
-			Invoke ("scoreDown", 0.5f);
+			Invoke ("scoreDown", 0.1f);
+
 		}
 
 
