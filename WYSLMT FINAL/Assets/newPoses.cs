@@ -4,8 +4,11 @@ using UnityEngine.UI;
 
 public class newPoses : MonoBehaviour {
 
+
+	public GameObject finishMove;
 	public Slider scoreSlider;
 	float speed = 0.075f;
+
 
 
 	// Use this for initialization
@@ -26,6 +29,11 @@ public class newPoses : MonoBehaviour {
 
 			Invoke ("scoreDown", 0.1f);
 
+		}
+
+		if (scoreSlider.value == 100) {
+			Debug.Log ("button created");
+//			Instantiate (finishMove, GameObject.Find ("heartPos2").transform.position, GameObject.Find ("heartPos2").transform.rotation);
 		}
 
 
