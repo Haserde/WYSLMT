@@ -14,7 +14,7 @@ public class moveDown : MonoBehaviour {
 	void Update () {
 
 		transform.position = transform.position + new Vector3 (0, ySpeed, 0);
-		Invoke ("destroySelf", .3F);
+		Invoke ("destroySelf", 1f);
 	
 	}
 
