@@ -14,7 +14,6 @@ public class ThreeWP : MonoBehaviour {
 		print ("here");
 		if (other.name == theThings) {
 			other.GetComponent<MovementScript> ().enabled = false;
-			//other.transform.position = transform.position;
 			level.GetComponent<SentenceSpawn>().score += 1;
 			other.GetComponent<Rigidbody>().Sleep();
 		}
