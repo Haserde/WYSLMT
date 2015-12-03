@@ -31,12 +31,11 @@ public class newPoses : MonoBehaviour {
 
 		}
 
-		if (scoreSlider.value == 100) {
+		if (scoreSlider.value > 100 && scoreSlider.value < 109) {
 			Debug.Log ("button created");
-//			Instantiate (finishMove, GameObject.Find ("heartPos2").transform.position, GameObject.Find ("heartPos2").transform.rotation);
+			scoreSlider.value = 110;
+			GameObject.Find("Canvas").gameObject.transform.Find("FinalMove").gameObject.SetActive(true);
 		}
-
-
 	}
 
 	void scoreDown(){
