@@ -17,12 +17,14 @@ public class MovementScript : MonoBehaviour {
 	Vector3 screenPoint;
 	Vector3 offset;
 
+	private AudioSource pop;
 
 
 	void Start() {
 		Vector3 startDir = Random.insideUnitSphere;
 		moveDirection = new Vector3 (startDir.x, startDir.y, 0);
 		//print (moveDirection);
+		pop = GetComponent<AudioSource> ();
 	}
 
 	void FixedUpdate () {
@@ -51,6 +53,7 @@ public class MovementScript : MonoBehaviour {
 		screenPoint = Camera.main.WorldToScreenPoint(GetComponent<Collider>().transform.position);
 		offset = GetComponent<Collider>().transform.position - 
 			Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z));
+		pop.Play ();
 
 	}
 	
@@ -61,6 +64,7 @@ public class MovementScript : MonoBehaviour {
 		transform.position = curPosition;
 		
 	}
+
 }
 
 

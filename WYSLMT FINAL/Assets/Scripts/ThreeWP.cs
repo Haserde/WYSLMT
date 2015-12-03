@@ -18,4 +18,9 @@ public class ThreeWP : MonoBehaviour {
 			other.GetComponent<Rigidbody>().Sleep();
 		}
 	}
+	void OnTriggerExit(Collider other) {
+		if (other.name == theThings){
+			level.GetComponent<SentenceSpawn>().score -= 1;
+		}
+	}
 }
