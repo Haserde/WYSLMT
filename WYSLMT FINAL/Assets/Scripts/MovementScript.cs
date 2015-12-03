@@ -22,7 +22,7 @@ public class MovementScript : MonoBehaviour {
 	void Start() {
 		Vector3 startDir = Random.insideUnitSphere;
 		moveDirection = new Vector3 (startDir.x, startDir.y, 0);
-		print (moveDirection);
+		//print (moveDirection);
 	}
 
 	void FixedUpdate () {
