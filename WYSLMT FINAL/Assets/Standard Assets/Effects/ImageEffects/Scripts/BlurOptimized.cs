@@ -38,7 +38,10 @@ namespace UnityStandardAssets.ImageEffects
                 ReportAutoDisable ();
             return isSupported;
         }
-	
+		public void Update(){
+		//	blurIterations += 1;
+		}
+
 
         public void OnDisable () {
             if (blurMaterial)
