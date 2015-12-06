@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 7d5074f8084854ceca2b1a5a49d52225
-timeCreated: 1449181774
+timeCreated: 1449184316
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -15,7 +15,7 @@ TextureImporter:
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -35,7 +35,7 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -3
-  maxTextureSize: 2048
+  maxTextureSize: 4096
   textureSettings:
     filterMode: 0
     aniso: 16
@@ -51,7 +51,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 300
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
@@ -60,9 +60,9 @@ TextureImporter:
     - name: hasibeSprite_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 54
         y: 0
-        width: 300
+        width: 209
         height: 300
       alignment: 0
       pivot: {x: .5, y: .5}
@@ -110,9 +110,9 @@ TextureImporter:
     - name: hasibeSprite_5
       rect:
         serializedVersion: 2
-        x: 1500
+        x: 1556
         y: 0
-        width: 300
+        width: 210
         height: 300
       alignment: 0
       pivot: {x: .5, y: .5}
