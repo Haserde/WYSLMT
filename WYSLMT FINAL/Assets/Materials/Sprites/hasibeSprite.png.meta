@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 7d5074f8084854ceca2b1a5a49d52225
-timeCreated: 1449184316
+timeCreated: 1449370464
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -70,9 +70,9 @@ TextureImporter:
     - name: hasibeSprite_1
       rect:
         serializedVersion: 2
-        x: 300
+        x: 345
         y: 0
-        width: 300
+        width: 226
         height: 300
       alignment: 0
       pivot: {x: .5, y: .5}
@@ -80,9 +80,9 @@ TextureImporter:
     - name: hasibeSprite_2
       rect:
         serializedVersion: 2
-        x: 600
+        x: 648
         y: 0
-        width: 300
+        width: 227
         height: 300
       alignment: 0
       pivot: {x: .5, y: .5}
@@ -90,9 +90,9 @@ TextureImporter:
     - name: hasibeSprite_3
       rect:
         serializedVersion: 2
-        x: 900
+        x: 947
         y: 0
-        width: 300
+        width: 225
         height: 300
       alignment: 0
       pivot: {x: .5, y: .5}
@@ -100,9 +100,9 @@ TextureImporter:
     - name: hasibeSprite_4
       rect:
         serializedVersion: 2
-        x: 1200
+        x: 1253
         y: 0
-        width: 300
+        width: 216
         height: 300
       alignment: 0
       pivot: {x: .5, y: .5}
@@ -120,9 +120,9 @@ TextureImporter:
     - name: hasibeSprite_6
       rect:
         serializedVersion: 2
-        x: 1800
+        x: 1854
         y: 0
-        width: 300
+        width: 216
         height: 300
       alignment: 0
       pivot: {x: .5, y: .5}
