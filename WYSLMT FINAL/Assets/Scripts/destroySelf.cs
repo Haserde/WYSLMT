@@ -19,6 +19,7 @@ public class destroySelf : MonoBehaviour {
 	}
 
 	void DestroySelf(){
+
 		Destroy (gameObject);
 
 	}

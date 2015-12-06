@@ -9,20 +9,16 @@ public class changeExpressions : MonoBehaviour {
 	void Start () {
 
 		datePoses = GetComponent<Animator>();
+
 	
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-		if (Input.GetKey (KeyCode.A)) {
-
-			datePoses.SetInteger("State", 2);
-
-		}
-
-	
-
+//			datePoses.SetInteger("State", Random.Range(0,3));
+		
 	
 	}
+
 }
