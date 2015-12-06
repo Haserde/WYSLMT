@@ -34,6 +34,7 @@ public class SentenceSpawn : MonoBehaviour {
 			level1.SetActive (false);
 			level2.SetActive (true);
 			cam.GetComponent<CameraTilt> ().rotSpeed = 3;
+			//cam.GetComponent<BlurOptimized> ();
 			DrinkPour.Play ();
 			Ice.Play ();
 		}
