@@ -17,14 +17,14 @@ public class checkSmirk : MonoBehaviour {
 		if (GameObject.Find ("Date").GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsName ("Glasses2")) {
 			
 			Debug.Log ("score+1");
-			counter.GetComponent<scoreCounter>().score += 1;
+			counter.GetComponent<scoreCounter> ().updateScore(1);
 			datePoses.SetInteger("State", Random.Range(1,4));
 
 			
 		} else {
 			
 			Debug.Log ("Score-1");
-			counter.GetComponent<scoreCounter>().score -= 1;
+			counter.GetComponent<scoreCounter> ().updateScore(-1);
 			datePoses.SetInteger ("State", Random.Range(1,4));
 		}
 		

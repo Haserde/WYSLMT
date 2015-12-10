@@ -18,14 +18,14 @@ public class checkLaugh : MonoBehaviour {
 		if (GameObject.Find ("Date").GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsName ("Wink")) {
 
 			Debug.Log ("score+1");
-			counter.GetComponent<scoreCounter>().score += 1;
+			counter.GetComponent<scoreCounter>().updateScore(1);
 			datePoses.SetInteger("State", Random.Range(1,4));
 
 		} else {
 
 			Debug.Log ("Score-1");
 			datePoses.SetInteger("State", Random.Range(1,4));
-			counter.GetComponent<scoreCounter>().score -= 1;
+			counter.GetComponent<scoreCounter> ().updateScore(-1);
 		}
 
 	}
