@@ -13,14 +13,18 @@ public class SentenceSpawn : MonoBehaviour {
 	private GameObject cam;
 	public AudioSource DrinkPour;
 	public AudioSource Ice;
+	bool blurStart = false;
+
+
 
 	void Start () {
 
-		levelCheck();
+		levelCheck ();
 		score = 0;
 		cam = GameObject.Find ("Main Camera");
 		DrinkPour = DrinkPour;
 		Ice = Ice;
+		blurStart = GetComponent<UnityStandardAssets.ImageEffects.BlurOptimized> ().enabled = true;
 	}
 
 	void Update () {
@@ -34,7 +38,8 @@ public class SentenceSpawn : MonoBehaviour {
 			level1.SetActive (false);
 			level2.SetActive (true);
 			cam.GetComponent<CameraTilt> ().rotSpeed = 3;
-			//cam.GetComponent<BlurOptimized> ();
+			blurStart = true;
+			cam.GetComponent<UnityStandardAssets.ImageEffects.BlurOptimized>().blurIterations += 1;
 			DrinkPour.Play ();
 			Ice.Play ();
 		}
