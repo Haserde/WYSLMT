@@ -24,7 +24,7 @@ public class SentenceSpawn : MonoBehaviour {
 		cam = GameObject.Find ("Main Camera");
 		DrinkPour = DrinkPour;
 		Ice = Ice;
-		blurStart = GetComponent<UnityStandardAssets.ImageEffects.BlurOptimized> ().enabled = true;
+//		blurStart = GetComponent<UnityStandardAssets.ImageEffects.BlurOptimized> ().enabled = true;
 	}
 
 	void Update () {
