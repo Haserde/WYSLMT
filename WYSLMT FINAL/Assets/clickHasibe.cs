@@ -15,7 +15,7 @@ public class clickHasibe : MonoBehaviour {
 
 		Debug.Log ("hey");
 
-		GameObject.Find ("Canvas").gameObject.transform.Find ("Hasi").transform.gameObject.SetActive (true);
+		Talk.gameObject.SetActive (true);
 
 	}
 }
