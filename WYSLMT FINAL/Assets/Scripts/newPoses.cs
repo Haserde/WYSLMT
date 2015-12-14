@@ -21,9 +21,9 @@ public class newPoses : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (scoreSlider.value > 30 && scoreSlider.value < 80) {
+		if (scoreSlider.value > 0 && scoreSlider.value < 80) {
 
-			Invoke ("scoreDown", 1);
+			Invoke ("scoreDown", 2);
 
 		} else if (scoreSlider.value > 80 && scoreSlider.value < 100) {
 
@@ -35,6 +35,7 @@ public class newPoses : MonoBehaviour {
 			Debug.Log ("button created");
 			scoreSlider.value = 110;
 			GameObject.Find("Canvas").gameObject.transform.Find("FinalMove").gameObject.SetActive(true);
+			finishMove.gameObject.SetActive(true);
 		}
 	}
 
