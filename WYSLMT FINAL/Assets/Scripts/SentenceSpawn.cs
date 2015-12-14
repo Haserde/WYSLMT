@@ -71,7 +71,7 @@ public class SentenceSpawn : MonoBehaviour {
 			Ice.Play ();
 		}
 
-		if(score >= 26){
+		if(score >= 24){
 
 			Application.LoadLevel("Dancing Game");
 
