@@ -23,7 +23,7 @@ public class newPoses : MonoBehaviour {
 
 		if (scoreSlider.value > 0 && scoreSlider.value < 80) {
 
-			Invoke ("scoreDown", 3);
+			Invoke ("scoreDown", 5);
 
 		} else if (scoreSlider.value > 80 && scoreSlider.value < 100) {
 
