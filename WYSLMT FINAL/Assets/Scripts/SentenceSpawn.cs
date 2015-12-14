@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class SentenceSpawn : MonoBehaviour {
 
@@ -14,6 +15,9 @@ public class SentenceSpawn : MonoBehaviour {
 	public AudioSource DrinkPour;
 	public AudioSource Ice;
 	bool blurStart = false;
+
+	public Button buttonText;
+
 
 
 
@@ -69,6 +73,8 @@ public class SentenceSpawn : MonoBehaviour {
 			cam.GetComponent<CameraTilt>().rotSpeed = 18;
 			DrinkPour.Play ();
 			Ice.Play ();
+			buttonText.gameObject.transform.Find("Text").gameObject.SetActive(false);
+			buttonText.gameObject.transform.Find("Text2").gameObject.SetActive(true);
 		}
 
 		if(score >= 24){
