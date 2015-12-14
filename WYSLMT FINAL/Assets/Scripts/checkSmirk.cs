@@ -18,14 +18,14 @@ public class checkSmirk : MonoBehaviour {
 			
 			Debug.Log ("score+1");
 			counter.GetComponent<scoreCounter> ().updateScore(1);
-			datePoses.SetInteger("State", Random.Range(1,4));
+			datePoses.SetInteger("State", Random.Range(1,3));
 
 			
 		} else {
 			
 			Debug.Log ("Score-1");
 			counter.GetComponent<scoreCounter> ().updateScore(-1);
-			datePoses.SetInteger ("State", Random.Range(1,4));
+			datePoses.SetInteger ("State", Random.Range(1,3));
 		}
 		
 	}
