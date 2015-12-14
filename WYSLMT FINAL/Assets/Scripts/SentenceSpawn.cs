@@ -69,7 +69,13 @@ public class SentenceSpawn : MonoBehaviour {
 			cam.GetComponent<CameraTilt>().rotSpeed = 18;
 			DrinkPour.Play ();
 			Ice.Play ();
-		}	
+		}
+
+		if(score >= 26){
+
+			Application.LoadLevel("Dancing Game");
+
+		}
 	}
 }
 
