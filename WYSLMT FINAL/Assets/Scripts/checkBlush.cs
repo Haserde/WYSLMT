@@ -6,6 +6,8 @@ public class checkBlush : MonoBehaviour {
 	Animator datePoses;
 	public GameObject counter;
 	public GameObject date;
+	public GameObject particles;
+	public GameObject butPos;
 	
 	void Start(){
 		
@@ -21,6 +23,8 @@ public class checkBlush : MonoBehaviour {
 			Debug.Log ("score+1");
 			counter.GetComponent<scoreCounter>().updateScore(1);
 			date.GetComponent<Animator>().SetInteger("State", Random.Range(1,6));
+			Instantiate(particles, butPos.transform.position, Quaternion.identity);
+
 			
 		} else {
 			

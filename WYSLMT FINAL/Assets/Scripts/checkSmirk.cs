@@ -5,6 +5,8 @@ public class checkSmirk : MonoBehaviour {
 
 	public GameObject counter;
 	public GameObject date;
+	public GameObject particles;
+	public GameObject butPos;
 	
 	void Start(){
 		
@@ -18,6 +20,7 @@ public class checkSmirk : MonoBehaviour {
 			Debug.Log ("score+1");
 			counter.GetComponent<scoreCounter>().updateScore(1);
 			date.GetComponent<Animator>().SetInteger("State", Random.Range(1,6));
+			Instantiate(particles, butPos.gameObject.transform.position, Quaternion.identity);
 			
 		} else {
 			

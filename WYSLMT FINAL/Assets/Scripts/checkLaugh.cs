@@ -6,6 +6,8 @@ public class checkLaugh : MonoBehaviour {
 	Animator datePoses;
 	public GameObject counter;
 	public GameObject date;
+	public GameObject particles;
+	public GameObject butPos;
 
 	void Start(){
 
@@ -20,7 +22,8 @@ public class checkLaugh : MonoBehaviour {
 
 			Debug.Log ("score+1");
 			counter.GetComponent<scoreCounter>().updateScore(1);
-			date.GetComponent<Animator>().SetInteger("State", Random.Range(1,6));;
+			date.GetComponent<Animator>().SetInteger("State", Random.Range(1,6));
+			Instantiate(particles, butPos.gameObject.transform.position, Quaternion.identity);
 
 		} else {
 
