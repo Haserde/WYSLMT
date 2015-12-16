@@ -9,6 +9,8 @@ public class scoreCounter : MonoBehaviour {
 	public GameObject heart2;
 	public GameObject heart3;
 
+
+
 	// Use this for initialization
 	void Start () {
 		score = 0;
@@ -21,11 +23,13 @@ public class scoreCounter : MonoBehaviour {
 			heart1.SetActive (false);
 			heart2.SetActive (false);
 			heart3.SetActive (false);
+
 		} else if (score == 1) {
 
 			heart1.SetActive (true);
 			heart2.SetActive (false);
 			heart3.SetActive (false);
+
 		
 		} else if (score == 2) {
 			
@@ -33,12 +37,16 @@ public class scoreCounter : MonoBehaviour {
 			heart2.SetActive (true);
 			heart3.SetActive (false);
 
+
 		} else if (score == 3) {
 			heart1.SetActive (true);
 			heart2.SetActive (true);
 			heart3.SetActive (true);
-			GameObject.Find("Canvas").gameObject.transform.Find("Congrats").gameObject.SetActive(true);
+			GameObject.Find ("Canvas").gameObject.transform.Find ("Congrats").gameObject.SetActive (true);
+
 	
-		}
+		} 
+
+	
 	}
 }

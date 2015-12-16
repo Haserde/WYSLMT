@@ -19,7 +19,7 @@ public class moveCamera : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (Input.mousePosition.x > theScreenWidth - Boundary) {
+		/*if (Input.mousePosition.x > theScreenWidth - Boundary) {
 			transform.position.x += speed * Time.deltaTime;
 		}
 		if (Input.mousePosition.x < 0 + Boundary) {
@@ -31,7 +31,7 @@ public class moveCamera : MonoBehaviour {
 		if (Input.mousePosition.y < 0 + Boundary) {
 			transform.position.y -= speed * Time.deltaTime;
 		}
-	}
+	}*/
 
 
 
@@ -47,4 +47,5 @@ public class moveCamera : MonoBehaviour {
 		transform.position = transform.position + new Vector3 (xMove, 0, 0);
 		
 		}*/
+	}
 }

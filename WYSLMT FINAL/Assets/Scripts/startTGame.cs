@@ -3,17 +3,16 @@ using System.Collections;
 
 public class startTGame : MonoBehaviour {
 
-	Animator datePoses;
+	Animator datePoses; 
+	public GameObject date; 
 
 	void Start(){
-
-		datePoses = GameObject.Find ("Date").GetComponent<Animator>();
 
 	}
 
 	public void startGame(){
 
-		datePoses.SetInteger("State", Random.Range(1,3));
+		date.GetComponent<Animator>().SetInteger("State", Random.Range(1,6));
 
 	}
 
