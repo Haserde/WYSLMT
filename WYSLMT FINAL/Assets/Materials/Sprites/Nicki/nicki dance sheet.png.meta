@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 37fe85c169a9f404a8ac130df8c5d87d
-timeCreated: 1450239186
+timeCreated: 1450240038
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -83,18 +83,18 @@ TextureImporter:
         y: 260
         width: 47
         height: 94
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: nicki dance sheet_3
       rect:
         serializedVersion: 2
-        x: 12
-        y: 155
+        x: 11
+        y: 156
         width: 42
         height: 94
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: nicki dance sheet_4
       rect:
@@ -103,8 +103,8 @@ TextureImporter:
         y: 158
         width: 66
         height: 77
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: nicki dance sheet_5
       rect:
@@ -113,8 +113,8 @@ TextureImporter:
         y: 63
         width: 66
         height: 77
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: nicki dance sheet_6
       rect:
@@ -123,8 +123,8 @@ TextureImporter:
         y: 63
         width: 66
         height: 77
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
