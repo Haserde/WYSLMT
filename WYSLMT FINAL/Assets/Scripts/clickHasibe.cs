@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class clickHasibe : MonoBehaviour {
 
@@ -11,11 +13,28 @@ public class clickHasibe : MonoBehaviour {
 
 	}
 
-	public void OnMouseDown(){
-
-		Debug.Log ("hey");
-
-		Talk.gameObject.SetActive (true);
+	void Update(){
 
 	}
+
+	public void OnMouseDown(){
+
+		Application.LoadLevel ("Talking Game");
+		Debug.Log ("hey");
+
+	}
+
+	void OnMouseEnter(){
+
+		Debug.Log ("sup");
+		Talk.gameObject.SetActive (true);
+	}
+
+	void OnMouseExit(){
+
+		Talk.gameObject.SetActive (false);
+
+	}
+
+
 }
