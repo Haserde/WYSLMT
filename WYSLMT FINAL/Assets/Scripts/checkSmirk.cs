@@ -3,29 +3,27 @@ using System.Collections;
 
 public class checkSmirk : MonoBehaviour {
 
-	Animator datePoses;
 	public GameObject counter;
+	public GameObject date;
 	
 	void Start(){
 		
-		datePoses = GameObject.Find ("Date").GetComponent<Animator>();
-			
 	}
-
-	public void checkS() {
+	
+	
+	public void checkL() {
 		
-		if (GameObject.Find ("Date").GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsName ("Glasses2")) {
+		if (date.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsName ("Smirk")) {
 			
 			Debug.Log ("score+1");
-			counter.GetComponent<scoreCounter> ().updateScore(1);
-			datePoses.SetInteger("State", Random.Range(1,3));
-
+			counter.GetComponent<scoreCounter>().updateScore(1);
+			date.GetComponent<Animator>().SetInteger("State", Random.Range(1,6));
 			
 		} else {
 			
 			Debug.Log ("Score-1");
+			date.GetComponent<Animator>().SetInteger("State", Random.Range(1,6));
 			counter.GetComponent<scoreCounter> ().updateScore(-1);
-			datePoses.SetInteger ("State", Random.Range(1,3));
 		}
 		
 	}

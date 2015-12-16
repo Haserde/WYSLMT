@@ -5,26 +5,27 @@ public class checkLaugh : MonoBehaviour {
 
 	Animator datePoses;
 	public GameObject counter;
+	public GameObject date;
 
 	void Start(){
 
-		datePoses = GameObject.Find ("Date").GetComponent<Animator>();
+		datePoses = date.GetComponent<Animator>();
 
 	}
 	
 
 	public void checkL() {
 
-		if (GameObject.Find ("Date").GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsName ("Wink")) {
+		if (date.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsName ("Laugh")) {
 
 			Debug.Log ("score+1");
 			counter.GetComponent<scoreCounter>().updateScore(1);
-			datePoses.SetInteger("State", Random.Range(1,3));
+			date.GetComponent<Animator>().SetInteger("State", Random.Range(1,6));;
 
 		} else {
 
 			Debug.Log ("Score-1");
-			datePoses.SetInteger("State", Random.Range(1,3));
+			date.GetComponent<Animator>().SetInteger("State", Random.Range(1,6));
 			counter.GetComponent<scoreCounter> ().updateScore(-1);
 		}
 

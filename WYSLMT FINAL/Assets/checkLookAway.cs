@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class checkBlush : MonoBehaviour {
-	
+public class checkLookAway : MonoBehaviour {
+
 	Animator datePoses;
 	public GameObject counter;
 	public GameObject date;
@@ -16,7 +16,7 @@ public class checkBlush : MonoBehaviour {
 	
 	public void checkL() {
 		
-		if (date.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsName ("Blush")) {
+		if (date.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsName ("Look Away")) {
 			
 			Debug.Log ("score+1");
 			counter.GetComponent<scoreCounter>().updateScore(1);
