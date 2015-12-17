@@ -1,0 +1,165 @@
+fileFormatVersion: 2
+guid: f5694f1a32a79437ca1c41257db5eef3
+timeCreated: 1450323947
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: nicki sprite sheet_0
+    21300002: nicki sprite sheet_1
+    21300004: nicki sprite sheet_2
+    21300006: nicki sprite sheet_3
+    21300008: nicki sprite sheet_4
+    21300010: nicki sprite sheet_5
+    21300012: nicki sprite sheet_6
+    21300014: nicki sprite sheet_7
+    21300016: nicki sprite sheet_8
+    21300018: nicki sprite sheet_9
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: nicki sprite sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 239
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nicki sprite sheet_1
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 0
+        width: 239
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nicki sprite sheet_2
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 0
+        width: 239
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nicki sprite sheet_3
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 0
+        width: 239
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nicki sprite sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 0
+        width: 239
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nicki sprite sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 0
+        width: 239
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nicki sprite sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 0
+        width: 239
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nicki sprite sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1759
+        y: 0
+        width: 239
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nicki sprite sheet_8
+      rect:
+        serializedVersion: 2
+        x: 2010
+        y: 0
+        width: 239
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nicki sprite sheet_9
+      rect:
+        serializedVersion: 2
+        x: 2261
+        y: 0
+        width: 239
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
