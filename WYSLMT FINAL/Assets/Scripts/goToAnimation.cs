@@ -11,20 +11,43 @@ public class goToAnimation : MonoBehaviour {
 
 		if (date.tag == "Hasibe") {
 
-			Application.LoadLevel ("Middle Scene");
+			gameObject.GetComponent<AudioSource>().Play ();
+
+			Invoke("loadHasibe", gameObject.GetComponent<AudioSource>().clip.length);
 		}
 
 		if (date.tag == "Gui") {
 
-			Application.LoadLevel("Gui Middle Scene");
+			Invoke("loadGui", gameObject.GetComponent<AudioSource>().clip.length);
+
+			gameObject.GetComponent<AudioSource>().Play ();
 
 		}
 
 		if (date.tag == "Nicki") {
 
-			Application.LoadLevel("Nicki Middle Scene");
+			gameObject.GetComponent<AudioSource>().Play ();
+			Invoke("loadNicki", gameObject.GetComponent<AudioSource>().clip.length);
 
 		}
 
+	}
+
+	void loadNicki(){
+
+		Application.LoadLevel("Nicki Middle Scene");
+
+	}
+
+	void loadGui(){
+		
+		Application.LoadLevel("Gui Middle Scene");
+		
+	}
+
+	void loadHasibe(){
+		
+		Application.LoadLevel("Middle Scene");
+		
 	}
 }
