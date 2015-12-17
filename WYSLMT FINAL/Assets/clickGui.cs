@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class clickNicki : MonoBehaviour {
+public class clickGui : MonoBehaviour {
 
 	public GameObject Talk;
 	
@@ -17,7 +17,7 @@ public class clickNicki : MonoBehaviour {
 	
 	public void OnMouseDown(){
 		
-		Application.LoadLevel ("Nicki Talking Scene");
+		Application.LoadLevel ("Gui Talking Scene");
 		Debug.Log ("hey");
 		
 	}
