@@ -3,49 +3,13 @@ using System.Collections;
 
 public class moveCamera : MonoBehaviour {
 
-	public int xMove = 1;
-	public int Boundary = 50;
-	public int speed = 5;
-
-	private int theScreenWidth;
-	private int theScreenHeight;
-
-	// Use this for initialization
-	void Start () {
-		theScreenWidth = Screen.width;
-		theScreenHeight = Screen.height;
+	void Start(){
 	}
-	
-	// Update is called once per frame
-	void Update () {
 
-		/*if (Input.mousePosition.x > theScreenWidth - Boundary) {
-			transform.position.x += speed * Time.deltaTime;
+	void Update(){
+			//transform.position = new Vector3(Input.mousePosition.x, Input.mousePosition.y);
+		float speed = 10f;
+		transform.position += new Vector3(Input.GetAxisRaw("Mouse X") * Time.deltaTime * speed, 0f, Input.GetAxisRaw("Mouse Y") * Time.deltaTime * speed);
+		transform.position = new Vector3(Mathf.Clamp(transform.position.x, -5f, 5f), transform.position.y, transform.position.z);
 		}
-		if (Input.mousePosition.x < 0 + Boundary) {
-			transform.position.x -= speed * Time.deltaTime;
-		}
-		if (Input.mousePosition.y > theScreenHeight - Boundary) {
-			transform.position.y += speed * Time.deltaTime;
-		}
-		if (Input.mousePosition.y < 0 + Boundary) {
-			transform.position.y -= speed * Time.deltaTime;
-		}
-	}*/
-
-
-
-
-
-
-		/*if(Input.GetKeyDown(KeyCode.A)){
-		transform.position = transform.position + new Vector3 (-xMove, 0, 0);
-
-		}
-
-		if (Input.GetKeyDown(KeyCode.D)){
-		transform.position = transform.position + new Vector3 (xMove, 0, 0);
-		
-		}*/
-	}
 }
