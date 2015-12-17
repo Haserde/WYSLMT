@@ -9,6 +9,8 @@ public class dancePose : MonoBehaviour {
 	public GameObject ScoreUp;
 	public GameObject Heart;
 	public GameObject HeartD;
+	public GameObject particle;
+	public GameObject butPos;
 
 
 	public void scoreUp(){
@@ -23,6 +25,8 @@ public class dancePose : MonoBehaviour {
 	
 			Instantiate (ScoreUp, GameObject.Find ("heartPos").transform.position, GameObject.Find ("heartPos").transform.rotation);
 			Instantiate (Heart, GameObject.Find ("heartPos2").transform.position, GameObject.Find ("heartPos2").transform.rotation);
+			Instantiate (particle, butPos.transform.position, Quaternion.identity);
+
 
 		}
 

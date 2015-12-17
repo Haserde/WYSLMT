@@ -10,6 +10,8 @@ public class dancePose2 : MonoBehaviour {
 	public GameObject ScoreDown;
 	public GameObject Heart;
 	public GameObject HeartD;
+	public GameObject particle;
+	public GameObject butPos;
 	
 	
 	public void scoreUp(){
@@ -25,6 +27,7 @@ public class dancePose2 : MonoBehaviour {
 			Instantiate (ScoreUp, GameObject.Find ("heartPos").transform.position, GameObject.Find ("heartPos").transform.rotation);
 			Instantiate (Heart, GameObject.Find ("heartPos2").transform.position, GameObject.Find ("heartPos2").transform.rotation);
 			Instantiate (Heart, GameObject.Find ("heartPos2").transform.position + new Vector3 (.8f, .5f, 0), GameObject.Find ("heartPos2").transform.rotation);
+			Instantiate (particle, butPos.transform.position, Quaternion.identity);
 			
 		} else {
 			difficulty = -7;
