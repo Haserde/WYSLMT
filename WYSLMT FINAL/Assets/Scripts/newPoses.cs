@@ -31,7 +31,7 @@ public class newPoses : MonoBehaviour {
 
 		}
 
-		if (scoreSlider.value > 100 && scoreSlider.value < 109) {
+		if (scoreSlider.value > 140 && scoreSlider.value < 150) {
 			Debug.Log ("button created");
 			scoreSlider.value = 110;
 			GameObject.Find("Canvas").gameObject.transform.Find("FinalMove").gameObject.SetActive(true);
