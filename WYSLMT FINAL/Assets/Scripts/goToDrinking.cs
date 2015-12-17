@@ -14,4 +14,10 @@ public class goToDrinking : MonoBehaviour {
 		Application.LoadLevel ("Gui Drinking Scene");
 
 	}
+
+	public void toNickiDrinkingScene(){
+
+		Application.LoadLevel("Nicki Drinking Scene");
+
+	}
 }
