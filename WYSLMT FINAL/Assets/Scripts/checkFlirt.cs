@@ -8,7 +8,9 @@ public class checkFlirt : MonoBehaviour {
 	public GameObject date;
 	public GameObject particles;
 	public GameObject butPos;
-	
+	public GameObject particlesDown;
+
+
 	void Start(){
 		
 		datePoses = date.GetComponent<Animator>();
@@ -30,6 +32,7 @@ public class checkFlirt : MonoBehaviour {
 			Debug.Log ("Score-1");
 			date.GetComponent<Animator>().SetInteger("State", Random.Range(1,6));
 			counter.GetComponent<scoreCounter> ().updateScore(-1);
+			Instantiate(particlesDown, butPos.transform.position, Quaternion.identity);
 		}
 		
 	}
