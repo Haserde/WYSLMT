@@ -7,7 +7,7 @@ public class goToAnimation : MonoBehaviour {
 
 	public void finalMove(){
 
-		GameObject.Find ("Canvas").gameObject.transform.Find ("Message").gameObject.SetActive (true);
+		Application.LoadLevel("Final Scene");
 
 	}
 }

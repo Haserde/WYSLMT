@@ -2,10 +2,10 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class SentenceSpawn : MonoBehaviour {
+public class SentenceSpawnGui : MonoBehaviour {
 
 	public float score;
-
+	
 	public GameObject level1;
 	public GameObject level2;
 	public GameObject level3;
@@ -15,27 +15,27 @@ public class SentenceSpawn : MonoBehaviour {
 	public AudioSource DrinkPour;
 	public AudioSource Ice;
 	bool blurStart = false;
-
+	
 	public Button buttonText;
-
-
-
-
+	
+	
+	
+	
 	void Start () {
-
+		
 		levelCheck ();
 		score = 0;
 		cam = GameObject.Find ("Main Camera");
 		DrinkPour = DrinkPour;
 		Ice = Ice;
-//		blurStart = GetComponent<UnityStandardAssets.ImageEffects.BlurOptimized> ().enabled = true;
+		//		blurStart = GetComponent<UnityStandardAssets.ImageEffects.BlurOptimized> ().enabled = true;
 	}
-
+	
 	void Update () {
 		print (score);
 	}
-
-
+	
+	
 	public void levelCheck(){
 		if (score == 3) {
 			print ("Done");
@@ -47,7 +47,7 @@ public class SentenceSpawn : MonoBehaviour {
 			DrinkPour.Play ();
 			Ice.Play ();
 		}
-
+		
 		if (score == 7) {
 			print ("Done");
 			level2.SetActive (false);
@@ -56,7 +56,7 @@ public class SentenceSpawn : MonoBehaviour {
 			DrinkPour.Play ();
 			Ice.Play ();
 		}
-
+		
 		if (score == 12){
 			print("Done");
 			level3.SetActive (false);
@@ -65,7 +65,7 @@ public class SentenceSpawn : MonoBehaviour {
 			DrinkPour.Play ();
 			Ice.Play ();
 		}
-
+		
 		if (score == 18){
 			print ("Done" );
 			level4.SetActive(false);
@@ -76,11 +76,10 @@ public class SentenceSpawn : MonoBehaviour {
 			buttonText.gameObject.transform.Find("Text").gameObject.SetActive(false);
 			buttonText.gameObject.transform.Find("Text2").gameObject.SetActive(true);
 		}
-
+		
 		if (score == 24) {
-
+			
 			Application.LoadLevel("Dancing Game");
 		}
 	}
 }
-

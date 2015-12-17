@@ -8,4 +8,10 @@ public class goToDrinking : MonoBehaviour {
 		Application.LoadLevel ("Drinking Game");
 
 	}
+
+	public void toGuiDrinkingScene(){
+
+		Application.LoadLevel ("Gui Drinking Scene");
+
+	}
 }
