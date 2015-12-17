@@ -9,11 +9,13 @@ public class checkFlirt : MonoBehaviour {
 	public GameObject particles;
 	public GameObject butPos;
 	public GameObject particlesDown;
+	public AudioSource kiss;
 
 
 	void Start(){
 		
 		datePoses = date.GetComponent<Animator>();
+		kiss = kiss;
 		
 	}
 	
@@ -26,6 +28,7 @@ public class checkFlirt : MonoBehaviour {
 			counter.GetComponent<scoreCounter>().updateScore(1);
 			date.GetComponent<Animator>().SetInteger("State", Random.Range(1,6));
 			Instantiate(particles, butPos.gameObject.transform.position, Quaternion.identity);
+			//kiss.Play ();
 			
 		} else {
 			
@@ -33,6 +36,7 @@ public class checkFlirt : MonoBehaviour {
 			date.GetComponent<Animator>().SetInteger("State", Random.Range(1,6));
 			counter.GetComponent<scoreCounter> ().updateScore(-1);
 			Instantiate(particlesDown, butPos.transform.position, Quaternion.identity);
+			//kiss.Play ();
 		}
 		
 	}
