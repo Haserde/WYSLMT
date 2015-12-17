@@ -11,10 +11,10 @@ public class SentenceSpawn : MonoBehaviour {
 	public GameObject level3;
 	public GameObject level4;
 	public GameObject level5;
+	public GameObject date;
 	private GameObject cam;
 	public AudioSource DrinkPour;
 	public AudioSource Ice;
-	bool blurStart = false;
 
 	public Button buttonText;
 
@@ -28,8 +28,9 @@ public class SentenceSpawn : MonoBehaviour {
 		cam = GameObject.Find ("Main Camera");
 		DrinkPour = DrinkPour;
 		Ice = Ice;
-//		blurStart = GetComponent<UnityStandardAssets.ImageEffects.BlurOptimized> ().enabled = true;
+		date = date;
 	}
+
 
 	void Update () {
 		print (score);
@@ -42,7 +43,6 @@ public class SentenceSpawn : MonoBehaviour {
 			level1.SetActive (false);
 			level2.SetActive (true);
 			cam.GetComponent<CameraTilt> ().rotSpeed = 3;
-			blurStart = true;
 			cam.GetComponent<UnityStandardAssets.ImageEffects.BlurOptimized>().blurIterations += 1;
 			DrinkPour.Play ();
 			Ice.Play ();
@@ -79,7 +79,16 @@ public class SentenceSpawn : MonoBehaviour {
 
 		if (score == 24) {
 
-			Application.LoadLevel("Dancing Game");
+			//Application.LoadLevel("Dancing Game");
+			if (date.tag == "Gui") {
+				Application.LoadLevel ("Gui Dancing Scene");
+			}
+			if (date.tag == "Nicki") {
+				Application.LoadLevel ("Nicki Dancing Scene");
+			}
+			if (date.tag == "Hasibe") {
+				Application.LoadLevel ("Dancing Game");
+			}
 		}
 	}
 }
