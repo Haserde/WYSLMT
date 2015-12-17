@@ -1,0 +1,132 @@
+fileFormatVersion: 2
+guid: e63790f73d5c940219497c57882fcec8
+timeCreated: 1450317263
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: gui dance sheet_0
+    21300002: gui dance sheet_1
+    21300004: gui dance sheet_2
+    21300006: gui dance sheet_3
+    21300008: gui dance sheet_4
+    21300010: gui dance sheet_5
+    21300012: gui dance sheet_6
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: gui dance sheet_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 259
+        width: 33
+        height: 94
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gui dance sheet_1
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 259
+        width: 33
+        height: 92
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gui dance sheet_2
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 257
+        width: 53
+        height: 94
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gui dance sheet_3
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 153
+        width: 38
+        height: 94
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gui dance sheet_4
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 149
+        width: 54
+        height: 94
+      alignment: 9
+      pivot: {x: .551776052, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gui dance sheet_5
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 40
+        width: 62
+        height: 94
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gui dance sheet_6
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 36
+        width: 54
+        height: 94
+      alignment: 9
+      pivot: {x: .376429379, y: .00507074734}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
